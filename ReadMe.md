@@ -14,8 +14,8 @@ TypeScript Node.js template app with Socket.io and a React.js TypeScript fronten
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/my-awesome-app.git
-cd my-awesome-app
+git clone https://github.com/Cambaru/STNR-Template.git
+cd STNR-Template
 ````
 
 2. Install the project by running the `./boostrap.sh` file
