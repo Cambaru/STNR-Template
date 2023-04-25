@@ -5,9 +5,9 @@ import path from 'path'
 import { fileDirName } from './helpers.js'
 import LoggerOverride from './loggerOverride.js'
 import { Server } from 'socket.io'
+import { InitServer } from '../../shared/types.js'
 //#endregion
 
-import { InitServer } from '../../shared/types.js'
 
 //#region Setup
 const { __dirname } = fileDirName(import.meta)
@@ -20,6 +20,8 @@ const io: InitServer = new Server(server, {
 	},
 })
 
+//Override the console.log method, incase you want to treat data on console.log,
+//for example emit an event on console.log
 LoggerOverride.setOverride(() => null)
 
 app.use(express.static(path.resolve(__dirname, '../../frontend/build')))
