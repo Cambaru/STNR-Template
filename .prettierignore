@@ -1,0 +1,9 @@
+/backend/dist
+/frontend/public
+/frontent/build
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**.json
+**/*.js

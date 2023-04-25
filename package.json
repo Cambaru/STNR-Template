@@ -1,0 +1,23 @@
+{
+	"name": "nodesocketioreacttemplate",
+	"version": "1.0.0",
+	"description": "Typescript React + Node.js Socket.io",
+	"scripts": {
+		"dev": "concurrently \"cd backend && prettier --write . && npm run build && npm start\" \"cd frontend && prettier --write . && npm run && npm start\"",
+		"format": "prettier --write .",
+		"format:check": "prettier --check ."
+	},
+	"author": "Luis Preuß",
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^8.0.1",
+		"prettier": "^2.8.7"
+	},
+	"dependencies": {
+		"nodemon": "^2.0.22",
+		"sass": "^1.60.0",
+		"socket.io": "^4.6.1",
+		"ts-loader": "^9.4.2",
+		"typescript": "^5.0.3"
+	}
+}
